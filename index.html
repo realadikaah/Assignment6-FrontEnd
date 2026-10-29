@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adilzhan — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="greeting">Hello, I'm Adilzhan</h1>
+        <p class="headline">Software Engineering Student at AITU</p>
+        <p class="intro">I like building things for the web and learning new technologies.</p>
+
+        <div class="theme-buttons">
+            <button id="btn-light">Light Theme</button>
+            <button id="btn-dark">Dark Theme</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I'm a second-year student who is passionate about frontend development. I started with plain HTML and CSS and now I'm diving deeper into JavaScript and jQuery.</p>
+
+            <p id="status-msg">Currently learning jQuery!</p>
+
+            <ul id="fun-facts">
+                <li>I can't solve a Rubik's cube in under 2 minutes</li>
+                <li>Coffee is my fuel for coding sessions</li>
+                <li>I want to work as a Freelancer after graduation</li>
+            </ul>
+
+            <div class="btn-row">
+                <button id="btn-hide">Hide</button>
+                <button id="btn-show">Show</button>
+                <button id="btn-toggle">Toggle</button>
+            </div>
+        </section>
+        <section id="gallery">
+            <h2>Photo Gallery</h2>
+            <p>A couple of pictures from my life.</p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.shutterstock.com/editorial/image-editorial/NbTbg252M1Dec85dNjU1MQ==/deceased-before-osiris-isis-nephthys-anubis-stele-440nw-5850749os.jpg" alt="Coding setup" id="img1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.techinsider.ru/upload/img_cache/92e/92eb7e9eef57896368e0cd8169b89d76_cropped_666x503.jpg" alt="Astana city" id="img2">
+                </div>
+            </div>
+
+            <div class="btn-row">
+                <button class="fade-btn" data-action="fadeIn">Fade In</button>
+                <button class="fade-btn" data-action="fadeOut">Fade Out</button>
+                <button class="fade-btn" data-action="fadeToggle">Fade Toggle</button>
+            </div>
+        </section>
+        <section id="favorites">
+            <h2>My Favorites</h2>
+
+            <div class="accordion">
+                <h3 class="accordion-heading">My Favorite Music ▾</h3>
+                <div class="accordion-panel">
+                    <p>I mostly listen to hip-hop and lo-fi beats while studying. Some of my top artists are Kendrick Lamar, Joji, and The Weeknd.</p>
+                </div>
+
+                <h3 class="accordion-heading">My Favorite Movie ▾</h3>
+                <div class="accordion-panel">
+                    <p>Interstellar by Christopher Nolan. The soundtrack, the visuals, and the storyline are just perfect. I've watched it at least 5 times.</p>
+                </div>
+
+                <h3 class="accordion-heading">My Favorite Subject ▾</h3>
+                <div class="accordion-panel">
+                    <p>Web Technologies — the reason I'm working on this assignment right now. I enjoy the instant visual feedback when coding for the browser.</p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>My Skills</h2>
+
+            <ul id="skills-list">
+                <li>HTML &amp; CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>Git &amp; GitHub</li>
+            </ul>
+
+            <div class="skill-input-row">
+                <input type="text" id="skill-input" placeholder="Enter a new skill...">
+            </div>
+            <div class="btn-row">
+                <button id="btn-append">Add Skill</button>
+                <button id="btn-prepend">Prepend Skill</button>
+                <button id="btn-remove">Remove Last Skill</button>
+            </div>
+        </section>
+        <section id="social">
+            <h2>Social Links</h2>
+            <p>Check out my profiles:</p>
+            <a href="https://github.com/realadikaah" id="social-link" target="_blank">My GitHub</a>
+
+            <div class="btn-row" style="margin-top: 12px;">
+                <button id="btn-github">GitHub</button>
+                <button id="btn-linkedin">LinkedIn</button>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+
+            <form id="contact-form" onsubmit="return false;">
+                <label for="input-name">Name</label>
+                <input type="text" id="input-name" placeholder="Hitler">
+
+                <label for="input-email">Email</label>
+                <input type="email" id="input-email" placeholder="fuhrerwehrmacht1945@gmail.com">
+            </form>
+
+            <div id="live-output">
+                <p><strong>Name:</strong> <span id="out-name">—</span></p>
+                <p><strong>Email:</strong> <span id="out-email">—</span></p>
+            </div>
+        </section>
+        <section id="skill-bars">
+            <h2>Skill Bars</h2>
+
+            <div class="bar-container">
+                <span class="bar-label">HTML &amp; CSS</span>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="90%"></div>
+                </div>
+            </div>
+
+            <div class="bar-container">
+                <span class="bar-label">JavaScript</span>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="50%"></div>
+                </div>
+            </div>
+
+            <div class="bar-container">
+                <span class="bar-label">Python</span>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="60%"></div>
+                </div>
+            </div>
+
+            <div class="bar-container">
+                <span class="bar-label">jQuery</span>
+                <div class="bar-track">
+                    <div class="bar-fill" data-width="15%"></div>
+                </div>
+            </div>
+
+            <div class="btn-row">
+                <button id="btn-animate">Animate My Skills</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Adilzhan&nbsp;</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
